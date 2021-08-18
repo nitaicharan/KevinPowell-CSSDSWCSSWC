@@ -1,63 +1,87 @@
 body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+
   font-family: "Roboto", sans-serif;
-  text-align: center;
-  padding-top: 100px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: #00a1ab;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
-.cards {
+.subhead {
+  font-size: 1.3125rem;
+  margin-top: 0;
+}
+
+.plans {
   display: flex;
-  gap: 1em;
+  justify-content: center;
+  text-align: center;
 }
 
-.card {
-  padding: 2em;
+.plan {
+  color: #4e4e4e;
+  background: linear-gradient(-45deg, #e5e3e8, #fafafa);
+
   width: 200px;
-  margin: 0 auto;
+  padding: 2em;
   border-radius: 1em;
-  line-height: 1.6;
+  margin: 0 0.5em;
 }
 
-.card--dark {
-  background: #234;
-  color: white;
-}
-
-.card--light {
-  background: #eee;
-  color: #234;
-}
-
-.card__title {
+.plan__title {
   text-transform: uppercase;
-  font-size: 24px;
+  margin: 0 0 1em;
+}
+
+.plan__price {
   margin: 0;
+
+  font-size: 3rem;
+  font-weight: 900;
+  color: #00a1ab;
 }
 
-.card__description {
-  margin-bottom: 3em;
-}
-
-.button {
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 0.25em;
-  padding: 0.5em 0.75em;
-  font-weight: 700;
-}
-
-.button--dark {
-  background: #234;
+.plan:nth-child(even) .plan__price {
   color: #fff;
 }
 
-.button--light {
+.plan__price span {
+  display: block;
+  font-size: 1.5625rem;
+  font-weight: 300;
+}
+
+.plan__description {
+  margin: 2em 0;
+  line-height: 1.5;
+}
+
+.plan__button {
+  color: white;
+  background-color: #4e4e4e;
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  border-radius: 0.375em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.plan:nth-child(even) .plan__button {
   color: #4e4e4e;
-  background: #fff;
+  background-color: white;
+}
+
+.plan:nth-child(even) {
+  color: #fff;
+  background: linear-gradient(-45deg, #00a1ab, #3741a0);
 }
