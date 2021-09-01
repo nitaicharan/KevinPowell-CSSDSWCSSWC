@@ -19,7 +19,7 @@ body {
 }
 
 .hero {
-    padding: 10rem 0;
+    display: flow-root;
 
     background-image: url(assets/hero.jpg);
     background-size: cover;
@@ -28,7 +28,7 @@ body {
 .hero__content {
     width: 48rem;
     padding: 3rem 2rem;
-    margin: 0 auto;
+    margin: 10rem auto;
 
     text-align: center;
 
