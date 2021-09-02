@@ -1,3 +1,72 @@
 /* Font used
 font-family: 'PT Sans', sans-serif; 
 */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+
+    font-family: PT Sans;
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    box-sizing: border-box;
+
+    font-size: 1.6rem;
+
+    background-image: url(./assets/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__content {
+    max-width: 777px;
+    padding: 4rem 4.8rem;
+
+    text-align: center;
+    line-height: 1.8;
+
+    background-color: #fff;
+}
+
+.hero__content--title {
+    margin-bottom: 0.907em;
+
+    font-weight: 400;
+}
+
+.hero__content--description {
+    padding: 0 3rem;
+    margin-bottom: 1.45em;
+
+    font-size: 2rem;
+}
+
+.btn,
+.btn:visited {
+    display: inline-block;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #171717;
+
+    padding: 2.1rem 4.6rem;
+}
+
+.btn--primary {
+    background-color: #59e89c;
+}
